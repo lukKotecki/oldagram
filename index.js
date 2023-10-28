@@ -28,3 +28,14 @@ const posts = [
     }
 ]
 
+
+const oldagrams = document.getElementById("oldagrams");
+
+
+function appendToOldagrams(oldagramToAppend) {
+    oldagrams.append(oldagramToAppend);
+
+}
+
+appendToOldagrams("cośtam cośtam")
+
