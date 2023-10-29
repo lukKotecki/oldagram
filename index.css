@@ -7,7 +7,7 @@ html, body {
 .container{
     width:400px;
     margin: 60px auto;
-    background-color: #aaa;
+    background-color: #eee;
 }
 
 header{
@@ -16,7 +16,7 @@ header{
     justify-content: space-between;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #eee;
+    background-color: #fff;
     margin:2px 0;
 }
 
@@ -32,7 +32,7 @@ header{
 }
 
 .oldagram-element{
-    background-color: #ccc;
+    background-color: #fff;
 }
 
 .poster-user-info{
@@ -63,7 +63,7 @@ header{
 
 .icon-section{
     margin:10px;
-    background-color: aqua;
+    background-color: #fff;
     padding:5px;
 }
 .icon-section button{
@@ -76,10 +76,10 @@ header{
     padding: 5px;
 }
 .image-button:hover{
-    border-radius: 2px;
+    border-radius: 5px;
     transform: scale(1.1);
     transition: 0.3s;
-    background-color: #aaa;
+    background-color: #ddd;
 }
 
 .likes{
@@ -93,4 +93,5 @@ header{
 
 .post-description{
     padding:5px 10px 10px 10px;
+    margin-bottom: 5px;;
 }

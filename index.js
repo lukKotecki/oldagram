@@ -32,10 +32,38 @@ const posts = [
 const oldagrams = document.getElementById("oldagrams");
 
 
+function renderOldagrams(post){
+
+    let oldagram="";
+    for(let i=0;i <post.length; i++){
+        console.log(i);
+        oldagram += `
+        <div class="oldagram-element">
+           <div class="poster-user-info">
+               <img class="user-image" src="${post[i].avatar}" alt="post avatar">
+               <div class="poster-user-credentials">
+                   <h5>${post[i].name}</h5>
+                   <p>${post[i].location}</p>
+               </div>
+           </div>
+           <img class="post-image" src="${post[i].post}" alt="post photo">
+           <div class="icon-section">
+               <button><img class="image-button" src="images/icon-heart.png"></button>
+               <button><img class="image-button" src="images/icon-comment.png"></button>
+               <button><img class="image-button" src="images/icon-dm.png"></button>
+           </div>
+           <div class="likes">${post[i].likes}</div>
+           <div class="post-description"><span>${post[i].username}</span> ${post[i].comment}</div>
+       </div>`
+
+    }
+
+    appendToOldagrams(oldagram);
+}
+
 function appendToOldagrams(oldagramToAppend) {
-    oldagrams.append(oldagramToAppend);
+    oldagrams.innerHTML += oldagramToAppend;
 
 }
 
-appendToOldagrams("cośtam cośtam")
-
+renderOldagrams(posts);
