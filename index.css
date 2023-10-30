@@ -33,6 +33,13 @@ header{
 
 .oldagram-element{
     background-color: #fff;
+    list-style-type: none;
+    margin: 0 0 0 -40px;
+}
+li{
+    background-color: #fff;
+    list-style-type: none;
+    margin: 0 0 0 -40px;
 }
 
 .poster-user-info{
